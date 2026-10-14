@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+api/.venv/
+atividade2/nginx/certs/*.pem

@@ -1,0 +1,33 @@
+services:
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: lab6
+    networks:
+      - lab6-net
+
+  nginx:
+    image: nginx:alpine
+    networks:
+      - lab6-net
+
+  api:
+    build: ../api
+    networks:
+      - lab6-net
+
+  redis:
+    image: redis:7
+    networks:
+      - lab6-net
+
+  admin:
+    image: nicolaka/netshoot:latest
+    command: sleep infinity
+    networks:
+      - lab6-net
+
+networks:
+  lab6-net:
+    external: true
