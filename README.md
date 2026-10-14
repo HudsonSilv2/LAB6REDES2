@@ -28,10 +28,6 @@ lab6-seguranca-redes/
 │   ├── requirements.txt
 │   └── app.py                      # Flask API demonstrativa
 │
-├── evidencias/
-│   ├── atividade1/                 # Prints dos testes sem proteção
-│   └── atividade2/                 # Prints dos testes com proteção
-│
 ├── README.md
 └── .gitignore
 ```
